@@ -1,7 +1,5 @@
-function Scoreboard() {
-  return (
-    <h2>Scoreboard #TODO</h2>
-  )
+function Scoreboard({ clickedIds }) {
+  return <h2>Current Score {clickedIds.length}</h2>;
 }
 
-export default Scoreboard
+export default Scoreboard;
