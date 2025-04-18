@@ -66,9 +66,13 @@ function App() {
   const handleClick = (id) => {
     if (clickedIds.includes(id)) {
       alert("You already clicked this card! Game over.");
-      setClickedIds([]); // or reset the game however you like
+      setClickedIds([]); // restart the game
     } else {
       setClickedIds([...clickedIds, id]); // add id to the list
+      if (clickedIds.length === brainrotData.length) {
+        alert("You won, Congrats!");
+        setClickedIds([]); // restart the game
+      }
     }
   };
 
