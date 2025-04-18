@@ -12,6 +12,7 @@ Click-based logic to personalize content flow
 Lightweight, fast, and fun
 
 🔧 Tech Stack
+
 React
 
 Vite
